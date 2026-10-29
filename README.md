@@ -42,36 +42,30 @@ npm run preview  # serve the production build
 
 ## Deploy to Cloudflare Pages
 
-This repo is **not** a site at its root: the GitHub repository (`Wationation/charisma`)
-keeps the app in the `mohamed-alaa-portfolio/` sub-folder. Cloudflare Pages builds from
-the repo root by default, so it looks for `package.json` where there is none and the
-build fails before Vite even starts — the "React (Vite)" framework preset only fills in
-the build command and output folder, it does not move the build.
+This repository **is** the site: `package.json` sits at the repo root, so Cloudflare
+Pages builds it with no root-directory override.
 
-Fix it once, in **Cloudflare dashboard → Workers & Pages → your project → Settings →
-Build** (or while creating the project, under *Advanced*):
+Settings in **Cloudflare dashboard -> Workers & Pages -> your project -> Settings -> Build**:
 
 | Setting | Value |
 | --- | --- |
-| Framework preset | None / React (Vite) — either works |
-| **Root directory** | `mohamed-alaa-portfolio` |
+| Framework preset | React (Vite) |
+| Root directory | *(empty - the repository root)* |
 | Build command | `npm run build` |
 | Build output directory | `dist` |
-| Environment variable | `NODE_VERSION` = `22` (or rely on `.nvmrc`) |
 
-`Root directory` makes every other path relative to that folder, so `dist` stays correct.
-Then **Retry deployment** — no code change is needed for an existing project.
+If a build fails with `Cannot find cwd: /opt/buildhome/repo/<folder>`, the **Root
+directory** field still names a folder that does not exist here - clear it.
 
-Why the other bits in this repo exist:
+Why the other files exist:
 
-- `.nvmrc` pins Node 22 — Vite 7 needs `^20.19.0 || >=22.12.0` and the Pages default can be older.
-- `package.json` → `engines` mirrors that requirement.
+- `.nvmrc` pins Node 22 - Vite 7 needs `^20.19.0 || >=22.12.0` and the Pages default can be older.
+- `package.json` -> `engines` mirrors that requirement.
 - `public/_redirects` serves `index.html` for unknown paths, so deep links get the SPA instead of a Cloudflare 404.
-- `public/logo/logo.png` is referenced by `index.html` as the favicon — drop the real file there (only `.gitkeep` is committed, so the favicon currently 404s).
+- `public/logo/logo.png` is referenced by `index.html` as the favicon but is not committed yet - add the real file.
 
-Prefer GitHub Actions instead of the Git integration? Use the same root directory via a
-job-level `defaults.run.working-directory` and deploy `mohamed-alaa-portfolio/dist` with
-`cloudflare/wrangler-action@v3`. Do not run both — keep one deploy path.
+Before this commit the repo only held a flat copy of `src/` - no `package.json`, no
+`index.html`, no Vite config - so every deployment failed before Vite ever started.
 
 ## Notes
 
