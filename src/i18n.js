@@ -60,8 +60,7 @@ export const STR = {
       sub: 'Message me anytime — I reply fast.',
       ghost: 'GET IN TOUCH',
       channels: [
-        { icon: 'whatsapp', name: 'WhatsApp', value: '+20 111 203 3163', href: 'https://wa.me/201112033163', primary: true },
-        { icon: 'phone', name: 'Phone', value: '+20 111 203 3163', href: 'tel:+201112033163' },
+        { icon: 'whatsapp', name: 'Phone / WhatsApp', value: '+20 111 203 3163', href: 'https://wa.me/201112033163', primary: true },
         { icon: 'mail', name: 'Email', value: 'mohamedalaa2125@gmail.com', href: 'mailto:mohamedalaa2125@gmail.com' },
       ],
       copy: 'Copy',
@@ -134,8 +133,7 @@ export const STR = {
       sub: 'ابعتلي في أي وقت — برد بسرعة.',
       ghost: 'تواصل',
       channels: [
-        { icon: 'whatsapp', name: 'واتساب', value: '+20 111 203 3163', href: 'https://wa.me/201112033163', primary: true },
-        { icon: 'phone', name: 'تليفون', value: '+20 111 203 3163', href: 'tel:+201112033163' },
+        { icon: 'whatsapp', name: 'تليفون / واتساب', value: '+20 111 203 3163', href: 'https://wa.me/201112033163', primary: true },
         { icon: 'mail', name: 'إيميل', value: 'mohamedalaa2125@gmail.com', href: 'mailto:mohamedalaa2125@gmail.com' },
       ],
       copy: 'نسخ',

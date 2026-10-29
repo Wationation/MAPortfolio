@@ -390,11 +390,11 @@ main, .footer { position: relative; z-index: 1; }
 .contact-sub { margin-top: 12px; color: var(--muted); font-size: 17px; }
 .channels {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   margin-top: clamp(36px, 5vw, 52px);
   width: 100%;
-  max-width: 880px;
+  max-width: 680px;
 }
 .channel {
   display: flex;

@@ -6,7 +6,8 @@ import { Icon } from './Icons.jsx'
  * (safe for Arabic letter shaping — we never split inside a word).
  */
 export default function Hero({ t, onNav }) {
-  const whatsapp = t.contact.channels[0].href
+  const whatsapp =
+    (t.contact.channels.find((c) => c.icon === 'whatsapp') ?? t.contact.channels[0]).href
   const words = t.hero.name.split(' ')
 
   return (

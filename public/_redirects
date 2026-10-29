@@ -1,0 +1,4 @@
+# Cloudflare Pages — single-page app fallback.
+# Any path that is not a real file is served by index.html (200, not 302),
+# so deep links and refreshes never show a Cloudflare 404.
+/*    /index.html   200

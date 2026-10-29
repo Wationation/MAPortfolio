@@ -1,0 +1,5 @@
+Drop your logo.png in this folder (public/logo/logo.png).
+
+It is used in two places:
+- header seal  (served at /logo/logo.png)
+- browser tab favicon
