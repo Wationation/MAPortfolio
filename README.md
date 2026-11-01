@@ -25,7 +25,7 @@ npm run preview  # serve the production build
 | Particles field background (React Bits, with a local `dynamic` prop so GSAP drives camera / speed / glow / opacity / drift per frame) | `src/components/Particles.jsx` + `Particles.css` |
 | Scroll engine: intro reveal, word-mask hero, background parallax, section-title drift, icon float, pinned steps, contact ghost word, velocity skew + particle boost, scroll-spy, progress bar | `src/App.jsx` |
 | Hero (name as word masks — Arabic-safe) | `src/components/Hero.jsx` |
-| Services (4 cards, 3D tilt-in, floating icons) | `src/components/Services.jsx` |
+| Services (3 cards, 3D tilt-in, floating icons) | `src/components/Services.jsx` |
 | Steps (3 steps, pinned rail that draws on desktop) | `src/components/Steps.jsx` |
 | Contact (Phone/WhatsApp + Email, copy-email, scrubbed ghost word) | `src/components/Contact.jsx` |
 | Stroke icon set | `src/components/Icons.jsx` |

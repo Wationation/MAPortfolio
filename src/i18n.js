@@ -13,7 +13,7 @@ export const STR = {
     hero: {
       greet: 'WEB DEVELOPER — CAIRO, EGYPT',
       name: 'MOHAMED ALAA',
-      tag: 'I build fast, beautiful websites for companies and shops in Cairo — from the first idea until your site works on every device.',
+      tag: 'I build fast, beautiful websites for shops in Cairo — from the first idea until your site works on every device.',
       cta1: 'Start your project',
       cta2: 'Whatsapp',
       chips: ['Delivered on time', 'Support after launch'],
@@ -23,11 +23,6 @@ export const STR = {
       title: 'What I do',
       sub: 'Websites built around your business — not ready-made templates.',
       items: [
-        {
-          icon: 'building',
-          title: 'Company websites',
-          desc: 'A clean site that presents your work and builds trust with clients before they even call you.',
-        },
         {
           icon: 'bag',
           title: 'Online stores',
@@ -86,7 +81,7 @@ export const STR = {
     hero: {
       greet: 'مطور مواقع — القاهرة، مصر',
       name: 'محمد علاء',
-      tag: 'بصمم وببني مواقع تفاعليه سريعة و متطوره للشركات والمحلات في القاهرة — من أول الفكرة لحد ما موقعك يشتغل على أي جهاز.',
+      tag: 'بصمم وببني مواقع تفاعليه سريعة و متطوره للمحلات في القاهرة — من أول الفكرة لحد ما موقعك يشتغل على أي جهاز.',
       cta1: 'ابدأ مشروعك',
       cta2: 'واتساب',
       chips: ['تسليم في الميعاد', 'دعم بعد التسليم'],
@@ -94,13 +89,8 @@ export const STR = {
     },
     services: {
       title: 'بعمل ايه',
-      sub: 'مواقع معمولة على مقاس شغلك إنت — مش نسخ جاهزة.',
+      sub: 'مواقع معمولة على مقاس شغلك إنت — مش نسخه جاهزة.',
       items: [
-        {
-          icon: 'building',
-          title: 'مواقع شركات',
-          desc: 'موقع نضيف يقدم شغلك ويعمل ثقة مع عملائك قبل ما حتى يتواصلوا معاك.',
-        },
         {
           icon: 'bag',
           title: 'متاجر إلكترونية',
@@ -119,7 +109,7 @@ export const STR = {
       ],
     },
     steps: {
-      title: 'إزاي بنشتغل',
+      title: 'إزاي هنشتغل',
       sub: 'ثلاث خطوات — من غير مفاجئات.',
       items: [
         { n: '١', title: 'نتكلم', desc: 'مكالمة واحدة أو كلام على الواتساب — تقولي محتاج إيه، وأقولك الخطة والسعر.' },
