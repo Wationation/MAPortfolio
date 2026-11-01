@@ -3,20 +3,6 @@ import { Icon } from './Icons.jsx'
 export default function Header({ t, lang, onLang, onTheme, onNav }) {
   return (
     <header className="header">
-      <div className="brand">
-        <span className="brand-seal" aria-hidden="true">
-          <img
-            src="/logo/logo.png"
-            alt=""
-            onError={(e) => { e.currentTarget.style.display = 'none' }}
-          />
-        </span>
-        <span className="brand-txt">
-          <span className="brand-name">{t.brand.name}</span>
-          <span className="brand-est">{t.brand.est}</span>
-        </span>
-      </div>
-
       <nav className="nav" aria-label="Main">
         {t.nav.map((item) => (
           <button key={item.id} onClick={() => onNav(item.id)}>{item.label}</button>
